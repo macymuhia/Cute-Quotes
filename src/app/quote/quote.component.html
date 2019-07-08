@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor='let quote of quotes'>
+        {{quote.quoteName}}
+        <app-quote-details [quote]='quote'></app-quote-details>
+        {{quote.addedBy}}
+    </li>
+</ul>
+<p *ngIf='quotes.length > 5'>Your quotes are too many</p>
