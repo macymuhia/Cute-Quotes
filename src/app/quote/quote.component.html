@@ -3,14 +3,14 @@
 
     <li *ngFor='let quote of quotes; let i = index'>
         <div class="row">
-            <div class="col-md-10" (click)='toggleDetails(i)'>
-                <p>"{{quote.quoteName}}"</p>
+            <div class="col-md-10">
+                <p (click)='toggleDetails(i)'>"{{quote.quoteName}}"</p>
 
                 <app-quote-details *ngIf='quote.showDetail' [quote]='quote'></app-quote-details>
-                <h6> Added by:&nbsp;{{quote.addedBy}}</h6>
+                <h6> Added by:&nbsp;{{quote.addedBy}} {{quote.submitDate|date|dateAgo}}</h6>
             </div>
             <div class="col-md-2">
-                <app-quote-delete></app-quote-delete>
+                <app-quote-delete [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-delete>
             </div>
         </div>
         <hr>
