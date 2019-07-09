@@ -1,8 +1,24 @@
 <ul>
-    <li *ngFor='let quote of quotes'>
-        {{quote.quoteName}}
-        <app-quote-details [quote]='quote'></app-quote-details>
-        {{quote.addedBy}}
+
+
+    <li *ngFor='let quote of quotes; let i = index'>
+        <div class="row">
+            <div class="col-md-10" (click)='toggleDetails(i)'>
+                <p>"{{quote.quoteName}}"</p>
+
+                <app-quote-details *ngIf='quote.showDetail' [quote]='quote'></app-quote-details>
+                <h6> Added by:&nbsp;{{quote.addedBy}}</h6>
+            </div>
+            <div class="col-md-2">
+                <app-quote-delete></app-quote-delete>
+            </div>
+        </div>
+        <hr>
     </li>
+
+
+
+
+
 </ul>
 <p *ngIf='quotes.length > 5'>Your quotes are too many</p>

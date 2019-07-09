@@ -9,13 +9,17 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {quoteName:'The grass is greener where you water it', authorName:'Maya Angelou', addedBy:'Macy Muhia'},
-    {quoteName:'YOLO', authorName:'Elenor Roosevelt', addedBy:'Macy Muhia'},
-    {quoteName:'Imitation is suicide', authorName:'Albert Einstein', addedBy:'Macy Muhia'},
-    {quoteName:'Peace begins with a smile', authorName:'Mahatma Gandi', addedBy:'Macy Muhia'},
-    {quoteName:'Impossible is for the unwilling', authorName:'Mother Teresa', addedBy:'Macy Muhia'},
-    {quoteName:'No pressure, no diamonds', authorName:'Joel Osteen', addedBy:'Macy Muhia'}
+    new Quote('The grass is greener where you water it', 'Maya Angelou', 'Macy Muhia'),
+    new Quote('YOLO', 'Elenor Roosevelt', 'Macy Muhia'),
+    new Quote('Imitation is suicide', 'Albert Einstein', 'Macy Muhia'),
+    new Quote('Peace begins with a smile', 'Mahatma Gandi', 'Macy Muhia'),
+    new Quote('Impossible is for the unwilling', 'Mother Teresa', 'Macy Muhia'),
+    new Quote('No pressure, no diamonds', 'Joel Osteen', 'Macy Muhia')
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showDetail = !this.quotes[index].showDetail;
+  }
 
   constructor() { }
 
