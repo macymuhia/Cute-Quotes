@@ -1,5 +1,6 @@
 export class Quote {
-  quoteName: string;
-  authorName: string;
-  addedBy: string;
+  showDetail: boolean;
+  constructor(public quoteName: string, public authorName: string, public addedBy: string){
+    this.showDetail = false;
+  }
 }
