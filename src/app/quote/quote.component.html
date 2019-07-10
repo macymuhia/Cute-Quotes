@@ -4,7 +4,7 @@
     <li *ngFor='let quote of quotes; let i = index'>
         <div class="row">
             <div class="col-md-10">
-                <p (click)='toggleDetails(i)'>"{{quote.quoteName}}"</p>
+                <h5 (click)='toggleDetails(i)'>"{{quote.quoteName}}"</h5>
 
                 <app-quote-details *ngIf='quote.showDetail' [quote]='quote'></app-quote-details>
                 <h6> Added by:&nbsp;{{quote.addedBy}} {{quote.submitDate|date|dateAgo}}</h6>
