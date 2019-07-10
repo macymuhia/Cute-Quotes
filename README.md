@@ -11,6 +11,7 @@ Cute Quotes is an application that allows users to add quotes and users can upvo
 * A user can view existing quotes
 * A user can view quote author and number of upvotes and downvotes
 * A user can upvote or qownvote quotes
+* A user can delete a quote
 * A user can add new quotes
 * The quotes with the highest upvotes should be highlighted.
 
