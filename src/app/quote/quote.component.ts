@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote('The grass is greener where you water it', 'Maya Angelou', 'Macy Muhia', new Date(2019,3,14)),
-    new Quote('YOLO', 'Elenor Roosevelt', 'Macy Muhia', new Date(2019,3,14)),
-    new Quote('Imitation is suicide', 'Albert Einstein', 'Macy Muhia', new Date(2019,3,14)),
-    new Quote('Peace begins with a smile', 'Mahatma Gandi', 'Macy Muhia', new Date(2018,3,4)),
-    new Quote('Impossible is for the unwilling', 'Mother Teresa', 'Macy Muhia', new Date(2019,3,14)),
-    new Quote('No pressure, no diamonds', 'Joel Osteen', 'Macy Muhia', new Date(2019,7,1))
+    new Quote(1, 'The grass is greener where you water it', 'Maya Angelou', 'Macy Muhia', new Date(2019, 6, 4)),
+    // new Quote(2, 'YOLO', 'Elenor Roosevelt', 'Macy Muhia', new Date(3,14, 2019)),
+    // new Quote(3, 'Imitation is suicide', 'Albert Einstein', 'Macy Muhia', new Date(3,14, 2019)),
+    // new Quote(4, 'Peace begins with a smile', 'Mahatma Gandi', 'Macy Muhia', new Date(3,14, 2018)),
+    // new Quote(5, 'Impossible is for the unwilling', 'Mother Teresa', 'Macy Muhia', new Date(3,14, 2019)),
+    // new Quote(6, 'No pressure, no diamonds', 'Joel Osteen', 'Macy Muhia', new Date(3,14, 2019))
   ];
 
   toggleDetails(index){
@@ -25,6 +25,13 @@ export class QuoteComponent implements OnInit {
     if (isComplete) {
       this.quotes.splice(index,1);
     }
+  }
+
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.quoteId = quoteLength+1;
+    quote.submitDate = new Date(quote.submitDate)
+    this.quotes.push(quote)
   }
 
   deleteQuote(isComplete, index){

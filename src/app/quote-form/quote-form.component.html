@@ -9,23 +9,30 @@
             </div>
 
             <!-- Modal body -->
-            <div class="modal-body">
-                <div class="form-group">
-                    <textarea class="form-control" name="textarea" id="textarea" cols="1" rows="3" placeholder="write quote..."></textarea>
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" name="" id="" placeholder="quote author">
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" name="" id="" placeholder="added by...">
-                </div>
-            </div>
+            <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <textarea [(ngModel)]="newQuote.quoteName" #quoteName='ngModel' class="form-control" type="text" required name="quoteName" id="quoteName" cols="1" rows="3" placeholder="write quote..."></textarea>
 
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Add Quote</button>
-            </div>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="newQuote.quoteAuthor" #quoteAuthor='ngModel' class="form-control" type="text" name="quoteAuthor" required id="quoteAuthor" placeholder="quote author">
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="newQuote.addedBy" #addedBy='ngModel' class="form-control" type="text" required name="addedBy" id="addedBy" placeholder="added by...">
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="newQuote.submitDate" #submitDate='ngModel' class="form-control" type="date" required name="submitDate" id="submitDate" placeholder="added by...">
+                    </div>
+                </div>
 
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    Display {{newQuote.quoteName}}
+                    <button type="submit" class="btn btn-primary">Add Quote</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
