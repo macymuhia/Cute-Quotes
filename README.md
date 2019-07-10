@@ -1,6 +1,26 @@
 # Cute Quotes
+![Cute Quotes Screenshot](./src/assets/images/screenshot.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+#### Check out Bella Pizzeria [here](https://macymuhia.github.io/Cute-Quotes/)
+
+Last modified 10th July 2019.
+#### By **Mercy Muhia**
+## Description
+Cute Quotes is an application that allows users to add quotes and users can upvote or downvote a quote.
+## Project Behaviour
+* A user can view existing quotes
+* A user can view quote author and number of upvotes and downvotes
+* A user can upvote or qownvote quotes
+* A user can add new quotes
+* The quotes with the highest upvotes should be highlighted.
+
+## Technologies Used
+HTML, CSS (Bootstrap) and [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+
+## Setup/Installation Requirements
+git clone https://github.com/macymuhia/Cute-Quotes.git
+
+```cd quotes```
 
 ## Development server
 
@@ -25,3 +45,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Support and contact details
+To contribute, submit a pull request. 
+For questions or concerns, reach out on mercy8muhia@gmail.com
+### License
+*MIT*
+
+### &copy; 2019 Mercy Muhia
