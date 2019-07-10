@@ -1,24 +1,27 @@
 <ul>
 
-
     <li *ngFor='let quote of quotes; let i = index'>
-        <div class="row">
-            <div class="col-md-10">
-                <h5 (click)='toggleDetails(i)'>"{{quote.quoteName}}"</h5>
+        <div class="card">
+            <div class="row">
+                <div class="col-md-2">
+                    <i class="fa fa-thumbs-up"></i>
+                    <br>
+                    <i class="fa fa-thumbs-down"></i>
+                </div>
+                <div class="col-md-8">
+                    <h5 (click)='toggleDetails(i)'>"{{quote.quoteName}}"</h5>
 
-                <app-quote-details *ngIf='quote.showDetail' [quote]='quote'></app-quote-details>
-                <h6> Added by:&nbsp;{{quote.addedBy}} {{quote.submitDate|date|dateAgo}}</h6>
-            </div>
-            <div class="col-md-2">
-                <app-quote-delete [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-delete>
+                    <app-quote-details *ngIf='quote.showDetail' [quote]='quote'></app-quote-details>
+                    <h6> Added by:&nbsp;{{quote.addedBy}} {{quote.submitDate|date|dateAgo}}</h6>
+                </div>
+                <div class="col-md-2">
+                    <app-quote-delete [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-delete>
+                </div>
+                <hr>
             </div>
         </div>
-        <hr>
     </li>
 
-
-
-
-
 </ul>
+
 <p *ngIf='quotes.length > 5'>Your quotes are too many</p>

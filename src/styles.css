@@ -8,3 +8,23 @@ body {
     background-size: cover;
     height: 100vh;
 }
+
+.card {
+    margin: 5px 150px;
+    background-color: rgba(245, 245, 245, 0.726);
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+i {
+    color: #6a8033;
+}
+
+i:hover {
+    color: #92ac50;
+}
+
+.close {
+    color: #e9211e;
+}

@@ -9,3 +9,7 @@ h6 {
     color: gray;
     font-size: 12px;
 }
+
+ul {
+    list-style: none;
+}
