@@ -9,6 +9,7 @@ import { QuoteDeleteComponent } from './quote-delete/quote-delete.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { MostlikesDirective } from './mostlikes.directive';
 import { DateAgoPipe } from './date-ago.pipe';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DateAgoPipe } from './date-ago.pipe';
     QuoteDeleteComponent,
     StrikethroughDirective,
     MostlikesDirective,
-    DateAgoPipe
+    DateAgoPipe,
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
