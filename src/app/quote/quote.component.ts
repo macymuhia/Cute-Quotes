@@ -10,10 +10,10 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
     new Quote(1, 'The grass is greener where you water it', 'Maya Angelou', 'Macy Muhia', new Date(2019, 6, 4)),
-    new Quote(2, 'YOLO', 'Elenor Roosevelt', 'Macy Muhia', new Date(2019, 7, 1)),
+    // new Quote(2, 'YOLO', 'Elenor Roosevelt', 'Macy Muhia', new Date(2019, 7, 1)),
     new Quote(3, 'Imitation is suicide', 'Albert Einstein', 'Macy Muhia', new Date(2019, 7, 1)),
-    new Quote(4, 'Peace begins with a smile', 'Mahatma Gandi', 'Macy Muhia', new Date(2018, 7, 1)),
-    new Quote(5, 'Impossible is for the unwilling', 'Mother Teresa', 'Macy Muhia', new Date(2019, 7, 1)),
+    // new Quote(4, 'Peace begins with a smile', 'Mahatma Gandi', 'Macy Muhia', new Date(2018, 7, 1)),
+    // new Quote(5, 'Impossible is for the unwilling', 'Mother Teresa', 'Macy Muhia', new Date(2019, 7, 1)),
     new Quote(6, 'No pressure, no diamonds', 'Joel Osteen', 'Macy Muhia', new Date(2019, 12, 1))
   ];
 
