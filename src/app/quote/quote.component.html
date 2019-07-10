@@ -1,5 +1,5 @@
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Quote</button>
-<app-quote-form [quote]='quote' (addQuote)="addNewQuote($event)"></app-quote-form>
+<app-quote-form [quote]='quotes' (addQuote)="addNewQuote($event)"></app-quote-form>
 <ul>
 
     <li *ngFor='let quote of quotes; let i = index'>
@@ -26,4 +26,4 @@
 
 </ul>
 
-<p *ngIf='quotes.length > 5'>Your quotes are too many</p>
+<!-- <p *ngIf='quotes.length > 5'>Your quotes are too many</p> -->

@@ -1,7 +1,7 @@
 # Cute Quotes
 ![Cute Quotes Screenshot](./src/assets/images/screenshot.png)
 
-#### Check out Bella Pizzeria [here](https://macymuhia.github.io/Cute-Quotes/)
+#### Check out Cute Quotes [here](https://macymuhia.github.io/Cute-Quotes/)
 
 Last modified 10th July 2019.
 #### By **Mercy Muhia**
