@@ -1,0 +1,18 @@
+.modal-title {
+    text-align: center;
+}
+
+.modal {
+    padding: 10px;
+    color: #6a8033;
+}
+
+textarea,
+input {
+    border: none;
+    border-bottom: 1px solid #6a803398;
+}
+
+.modal-body {
+    display: block;
+}
