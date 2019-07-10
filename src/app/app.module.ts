@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteDeleteComponent } from './quote-delete/quote-delete.component';
+import { StrikethroughDirective } from './strikethrough.directive';
+import { MostlikesDirective } from './mostlikes.directive';
+import { DateAgoPipe } from './date-ago.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     QuoteDetailsComponent,
-    QuoteDeleteComponent
+    QuoteDeleteComponent,
+    StrikethroughDirective,
+    MostlikesDirective,
+    DateAgoPipe
   ],
   imports: [
     BrowserModule,
